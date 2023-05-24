@@ -1,0 +1,42 @@
+mkdir -p ~/bin
+
+sudo dnf install tmux htop ncdu git fd-find ripgrep fzf
+
+echo Need to get Golang
+sudo rm -rf /usr/local/go
+curl -L https://go.dev/dl/$(curl -s https://api.github.com/repos/golang/go/git/matching-refs/tags/go | grep '/ref' | sed -e '/beta/ d' -e '/rc/ d' -e 's/.*\(go[0-9.]*\).*/\1/' | tail -1).linux-amd64.tar.gz | sudo tar -xzC /usr/local
+
+echo installing it
+echo 'export PATH=$PATH:/usr/local/go/bin:$HOME/bin:$HOME/go/bin' >> ~/.bashrc
+echo 'export GOPATH=$HOME/go' >> ~/.bashrc
+source ~/.bashrc
+
+go install github.com/jesseduffield/lazygit@latest
+go install github.com/nao1215/gup@latest
+go install github.com/justjanne/powerline-go@latest
+go install github.com/githubnemo/CompileDaemon@latest
+go install github.com/giantswarm/semver-bump@latest
+go install github.com/muesli/duf@latest
+go install golang.org/x/tools/cmd/goimports@latest
+go install golang.org/x/tools/cmd/callgraph@latest
+go install golang.org/x/tools/cmd/digraph@latest
+go install golang.org/x/tools/cmd/stringer@latest
+go install mvdan.cc/gofumpt@latest
+
+wget https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-amd64-static.tar.xz
+tar xvf ffmpeg-release-amd64-static.tar.xz
+
+#echo clean this up, has to be the correct folder instead of this specific one:
+mv ffmpeg-5.0.1-amd64-static/ff* ~/bin/
+rm -rf ffmpeg-5.0.1-amd64-static
+
+wget https://github.com/arrowtype/recursive/releases/download/v1.084/ArrowType-Recursive-1.084.zip
+unzip ArrowType-Recursive-1.084.zip
+mkdir -p ~/.fonts
+cp ArrowType-Recursive-1.084/Recursive_Code/RecMonoCasual/*.ttf ~/.fonts/
+rm -rf ArrowType-Recursive-1.084
+
+# haskell stuff:
+# https://github.com/mrcjkb/haskell-tools.nvim
+
+
