@@ -14,7 +14,12 @@ select = "underline"
 center = ["version-control"]
 
 [editor.lsp]
-display-inlay-hints = false
+display-inlay-hints = true
+display-messages = true
+
+[editor.indent-guides]
+render = true
+character = "·"
 
 [keys.insert]
 "C-c" = "normal_mode"     # Maps Ctrl-C to enter normal mode
