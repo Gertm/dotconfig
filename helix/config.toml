@@ -14,12 +14,12 @@ select = "underline"
 center = ["version-control"]
 
 [editor.lsp]
-display-inlay-hints = true
+display-inlay-hints = false
 display-messages = true
 
 [editor.indent-guides]
 render = true
-character = "·"
+character = "⁚"
 
 [keys.insert]
 "C-c" = "normal_mode"     # Maps Ctrl-C to enter normal mode
@@ -31,3 +31,8 @@ pageup = "no_op"
 pagedown = "no_op"
 home = "no_op"
 end = "no_op"
+
+# Minor mode on 'backspace' for toggling settings
+[keys.normal."backspace"]
+h = ":toggle-option lsp.display-inlay-hints"
+i = ":toggle-option indent-guides.render"
