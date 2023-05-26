@@ -11,7 +11,9 @@ normal = "block"
 select = "underline"
 
 [editor.statusline]
-center = ["version-control"]
+left = ["mode", "spinner", "file-name", "file-type", "total-line-numbers", "file-encoding"]
+center = []
+right = ["selections", "primary-selection-length", "position", "position-percentage", "spacer", "diagnostics", "workspace-diagnostics", "version-control"]
 
 [editor.lsp]
 display-inlay-hints = false
