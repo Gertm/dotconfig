@@ -39,4 +39,4 @@ rm -rf ArrowType-Recursive-1.084
 # haskell stuff:
 # https://github.com/mrcjkb/haskell-tools.nvim
 
-
+git config --global alias.squash-all '!f(){ git reset $(git commit-tree HEAD^{tree} "$@");};f'
