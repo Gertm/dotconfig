@@ -22,6 +22,7 @@ go install golang.org/x/tools/cmd/callgraph@latest
 go install golang.org/x/tools/cmd/digraph@latest
 go install golang.org/x/tools/cmd/stringer@latest
 go install mvdan.cc/gofumpt@latest
+go install golang.org/x/tools/gopls@latest
 
 wget https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-amd64-static.tar.xz
 tar xvf ffmpeg-release-amd64-static.tar.xz
