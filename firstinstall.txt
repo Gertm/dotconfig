@@ -29,8 +29,9 @@ wget https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-amd64-static.tar.x
 tar xvf ffmpeg-release-amd64-static.tar.xz
 
 #echo clean this up, has to be the correct folder instead of this specific one:
-mv ffmpeg-5.0.1-amd64-static/ff* ~/bin/
-rm -rf ffmpeg-5.0.1-amd64-static
+
+#mv ffmpeg-5.0.1-amd64-static/ff* ~/bin/
+#rm -rf ffmpeg-5.0.1-amd64-static
 
 wget https://github.com/arrowtype/recursive/releases/download/v1.084/ArrowType-Recursive-1.084.zip
 unzip ArrowType-Recursive-1.084.zip
@@ -42,3 +43,4 @@ rm -rf ArrowType-Recursive-1.084
 # https://github.com/mrcjkb/haskell-tools.nvim
 
 git config --global alias.squash-all '!f(){ git reset $(git commit-tree HEAD^{tree} "$@");};f'
+
