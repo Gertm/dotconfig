@@ -1,3 +1,9 @@
 [[language]] 
 name = "go" 
 config = { "formatting.gofumpt" = true, "ui.diagnostic.staticcheck" = true } 
+
+[[language]]
+name = "rust"
+
+[language-server.rust-analyzer.config.check]
+command = "clippy"
