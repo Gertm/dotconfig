@@ -38,3 +38,4 @@ end = "no_op"
 [keys.normal."backspace"]
 h = ":toggle-option lsp.display-inlay-hints"
 i = ":toggle-option indent-guides.render"
+l = ":lsp-restart"
