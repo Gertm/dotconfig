@@ -47,3 +47,5 @@ git config --global alias.squash-all '!f(){ git reset $(git commit-tree HEAD^{tr
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 rustup component add rust-analyzer
 
+sudo dnf -y copr enable varlad/helix
+sudo dnf -y install helix
