@@ -1,6 +1,8 @@
+# not setting strict mode because we want the failed commands to keep running.
 mkdir -p ~/bin
 
-sudo dnf install tmux htop ncdu git fd-find ripgrep fzf
+sudo dnf install tmux btop ncdu git fd-find ripgrep fzf bat prettyping
+sudo apt install tmux btop ncdu git fd-find ripgrep fzf bat prettyping
 
 echo Need to get Golang
 sudo rm -rf /usr/local/go
@@ -25,7 +27,7 @@ go install mvdan.cc/gofumpt@latest
 go install golang.org/x/tools/gopls@latest
 go install github.com/go-delve/delve/cmd/dlv@latest
 
-wget https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-amd64-static.tar.xz
+wget -O ffmpeg-release-amd64-static.tar.xz https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-amd64-static.tar.xz
 tar xvf ffmpeg-release-amd64-static.tar.xz
 
 #echo clean this up, has to be the correct folder instead of this specific one:
@@ -41,6 +43,7 @@ rm -rf ArrowType-Recursive-1.084
 
 # haskell stuff:
 # https://github.com/mrcjkb/haskell-tools.nvim
+curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
 
 git config --global alias.squash-all '!f(){ git reset $(git commit-tree HEAD^{tree} "$@");};f'
 
