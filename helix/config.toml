@@ -18,6 +18,7 @@ right = ["selections", "primary-selection-length", "position", "position-percent
 [editor.lsp]
 display-inlay-hints = false
 display-messages = true
+snippets = true
 
 [editor.indent-guides]
 render = true
@@ -41,3 +42,4 @@ i = ":toggle-option indent-guides.render"
 
 [keys.normal.space]
 l = ":lsp-restart"
+
