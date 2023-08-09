@@ -43,3 +43,5 @@ i = ":toggle-option indent-guides.render"
 [keys.normal.space]
 l = ":lsp-restart"
 
+[keys.normal]
+"=" = ":format"
