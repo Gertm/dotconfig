@@ -45,3 +45,5 @@ l = ":lsp-restart"
 
 [keys.normal]
 "=" = ":format"
+H = "goto_line_start"
+L = "goto_line_end"
