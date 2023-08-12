@@ -48,6 +48,7 @@ go install golang.org/x/tools/gopls@latest
 go install github.com/go-delve/delve/cmd/dlv@latest
 go install github.com/go-task/task/v3/cmd/task@latest
 go install github.com/goreleaser/goreleaser@latest
+go install github.com/dkorunic/betteralign/cmd/betteralign@latest
 
 wget -O ffmpeg-release-amd64-static.tar.xz https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-amd64-static.tar.xz
 tar xvf ffmpeg-release-amd64-static.tar.xz
