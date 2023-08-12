@@ -1,10 +1,30 @@
+#!/bin/bash
+
 # not setting strict mode because we want the failed commands to keep running.
 mkdir -p ~/bin
 
-sudo dnf install tmux btop ncdu git fd-find ripgrep fzf bat prettyping
-sudo apt install tmux btop ncdu git fd-find ripgrep fzf bat prettyping
+if command -v apt help &> /dev/null
+then
+  echo "Seems like we're on Debian."
+  sudo apt update
+  sudo apt install tmux btop ncdu git fd-find ripgrep fzf bat prettyping
+  wget -O /tmp/helix-23.05-x86_64-linux.tar.xz https://github.com/helix-editor/helix/releases/download/23.05/helix-23.05-x86_64-linux.tar.xz
+  mkdir -p $HOME/src
+  tar xf /tmp/helix-23.05-x86_64-linux.tar.xz -C $HOME/src/
+  ln -s $HOME/src/helix-23.05-x86_64-linux/hx $HOME/bin/hx
+  echo 'export HELIX_RUNTIME=$HOME/src/helix-23.05-x86_64-linux/runtime' >> ~/.bashrc
+fi
 
-echo Need to get Golang
+if command -v dnf &> /dev/null
+then
+  echo "Seems like we're on Fedora."
+  sudo dnf install tmux btop ncdu git fd-find ripgrep fzf bat prettyping
+  sudo dnf -y copr enable varlad/helix
+  sudo dnf -y install helix
+fi
+
+
+echo Installing golang.
 sudo rm -rf /usr/local/go
 curl -L https://go.dev/dl/$(curl -s https://api.github.com/repos/golang/go/git/matching-refs/tags/go | grep '/ref' | sed -e '/beta/ d' -e '/rc/ d' -e 's/.*\(go[0-9.]*\).*/\1/' | tail -1).linux-amd64.tar.gz | sudo tar -xzC /usr/local
 
@@ -52,5 +72,16 @@ git config --global alias.squash-all '!f(){ git reset $(git commit-tree HEAD^{tr
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 rustup component add rust-analyzer
 
-sudo dnf -y copr enable varlad/helix
-sudo dnf -y install helix
+wget -O /tmp/zig-linux-x86_64-0.11.0.tar.xz https://ziglang.org/download/0.11.0/zig-linux-x86_64-0.11.0.tar.xz
+mkdir -p $HOME/src
+tar xvf /tmp/zig-linux-x86_64-0.11.0.tar.xz -C $HOME/src/
+ln -s $HOME/src/zig-linux-x86_64-0.11.0/zig $HOME/bin/zig
+rm /tmp/zig-linux-x86_64-0.11.0.tar.xz 
+cd $HOME/src/
+git clone https://github.com/zigtools/zls
+cd zls
+zig build -Doptimize=ReleaseSafe -Ddata_version=0.11.0
+ln -s $HOME/src/zls/zig-out/bin/zls  $HOME/bin/zls
+cd $HOME
+# load in .bashrc again so we can use it immediately.
+source ~/.bashrc
