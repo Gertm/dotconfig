@@ -43,3 +43,7 @@ i = ":toggle-option indent-guides.render"
 [keys.normal.space]
 l = ":lsp-restart"
 
+[keys.normal]
+"=" = ":format"
+H = "goto_line_start"
+L = "goto_line_end"
