@@ -45,8 +45,8 @@ l = ":lsp-restart"
 
 [keys.normal]
 "=" = ":format"
-H = "goto_line_start"
-L = "goto_line_end"
+"C-h" = "goto_line_start"
+"C-l" = "goto_line_end"
 up = "no_op"
 down = "no_op"
 left = "no_op"
