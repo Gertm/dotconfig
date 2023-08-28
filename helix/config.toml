@@ -1,4 +1,4 @@
-theme = "autumn"
+theme = "darcula-solid"
 
 [editor]
 line-number = "relative"
@@ -28,9 +28,9 @@ character = "⁚"
 "C-c" = "normal_mode"     # Maps Ctrl-C to enter normal mode
 
 # Minor mode on 'backspace' for toggling settings
-[keys.normal."backspace"]
-h = ":toggle-option lsp.display-inlay-hints"
-i = ":toggle-option indent-guides.render"
+# [keys.normal."backspace"]
+# h = ":toggle-option lsp.display-inlay-hints"
+# i = ":toggle-option indent-guides.render"
 
 [keys.normal.space]
 l = ":lsp-restart"
