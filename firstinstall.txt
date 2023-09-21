@@ -13,6 +13,8 @@ then
   tar xf /tmp/helix-23.05-x86_64-linux.tar.xz -C $HOME/src/
   ln -s $HOME/src/helix-23.05-x86_64-linux/hx $HOME/bin/hx
   echo 'export HELIX_RUNTIME=$HOME/src/helix-23.05-x86_64-linux/runtime' >> ~/.bashrc
+  # for Factor:
+  # sudo apt-get --yes install libc6-dev libpango1.0-dev libx11-dev xorg-dev libgtk2.0-dev gtk2-engines-pixbuf libgtkglext1-dev wget git git-doc rlwrap gcc g++ make
 fi
 
 if command -v dnf &> /dev/null
@@ -21,8 +23,9 @@ then
   sudo dnf install tmux btop ncdu git fd-find ripgrep fzf bat prettyping
   sudo dnf -y copr enable varlad/helix
   sudo dnf -y install helix
+  # for Factor:
+  # sudo dnf install gtkglext-devel gtk2-devel gtk2-engines-devel 
 fi
-
 
 echo Installing golang.
 sudo rm -rf /usr/local/go
