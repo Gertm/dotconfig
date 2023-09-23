@@ -3,19 +3,17 @@
 # not setting strict mode because we want the failed commands to keep running.
 mkdir -p ~/bin
 
-if command -v apt help &> /dev/null
-then
-  echo "Seems like we're on Debian."
-  sudo apt update
-  sudo apt install tmux btop ncdu git fd-find ripgrep fzf bat prettyping
-  wget -O /tmp/helix-23.05-x86_64-linux.tar.xz https://github.com/helix-editor/helix/releases/download/23.05/helix-23.05-x86_64-linux.tar.xz
-  mkdir -p $HOME/src
-  tar xf /tmp/helix-23.05-x86_64-linux.tar.xz -C $HOME/src/
-  ln -s $HOME/src/helix-23.05-x86_64-linux/hx $HOME/bin/hx
-  echo 'export HELIX_RUNTIME=$HOME/src/helix-23.05-x86_64-linux/runtime' >> ~/.bashrc
-  # for Factor:
-  # sudo apt-get --yes install libc6-dev libpango1.0-dev libx11-dev xorg-dev libgtk2.0-dev gtk2-engines-pixbuf libgtkglext1-dev wget git git-doc rlwrap gcc g++ make
-fi
+# if command -v apt help &> /dev/null
+# then
+#   echo "Seems like we're on Debian."
+#   sudo apt update
+#   sudo apt install tmux btop ncdu git fd-find ripgrep fzf bat prettyping
+#   wget -O /tmp/helix-23.05-x86_64-linux.tar.xz https://github.com/helix-editor/helix/releases/download/23.05/helix-23.05-x86_64-linux.tar.xz
+#   mkdir -p $HOME/src
+#   tar xf /tmp/helix-23.05-x86_64-linux.tar.xz -C $HOME/src/
+#   ln -s $HOME/src/helix-23.05-x86_64-linux/hx $HOME/bin/hx
+#   echo 'export HELIX_RUNTIME=$HOME/src/helix-23.05-x86_64-linux/runtime' >> ~/.bashrc
+# fi
 
 if command -v dnf &> /dev/null
 then
