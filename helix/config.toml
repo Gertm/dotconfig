@@ -42,6 +42,8 @@ l = ":lsp-restart"
 "C-l" = "goto_line_end"
 "H" = "goto_line_start"
 "L" = "goto_line_end"
+"C-c" = "normal_mode"
+"C" = "toggle_comments"
 
 [keys.select]
 "C-h" = "goto_line_start"
