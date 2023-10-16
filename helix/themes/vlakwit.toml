@@ -1,24 +1,24 @@
 # Author: Alexander Brevig <alexanderbrevig@gmail.com>, krfl <kr.fl@outlook.com>
 # Adopted from https://github.com/biletskyy/flatwhite-syntax
 
-"attribute" = { fg = "blue_text", bg = "blue_bg" }
-"comment" = { fg = "base3", modifiers = ["italic"] }
+"attribute" = { fg = "blue_text"}
+"comment" = { fg = "base2", modifiers = ["italic"] }
 "comment.line" = {}
 "comment.block" = {}
 "comment.block.documentation" = { fg = "base2" }
-"constant" = { fg = "blue_text", bg = "blue_bg" }
+"constant" = { fg = "blue_text"}
 "constructor" = { fg = "base1" }
 "function" = { fg = "base1", modifiers = ["bold"] }
-"keyword" = { fg = "purple_text", bg = "purple_bg" }
+"keyword" = { fg = "purple_text"}
 "label" = { modifiers = ["bold"] }
-"namespace" = { fg = "teal_text", bg = "teal_bg" }
+"namespace" = { fg = "teal_text"}
 "operator" = { fg = "base1" }
 "punctuation.bracket" = { modifiers = ["bold"] }
-"special" = { fg = "blue_text", bg = "blue_bg" }
+"special" = { fg = "blue_text"}
 "string" = { fg = "green_text"}
 "type" = { fg = "base1" }
 "variable" = { fg = "base1" }
-"variable.parameter" = { fg = "blue_text", bg = "blue_bg" }
+"variable.parameter" = { fg = "blue_text"}
 
 "diagnostic" = { modifiers = ["underlined"] }
 
@@ -37,6 +37,7 @@
 "markup.raw" = { fg = "orange_text", bg = "orange_bg" }
 "markup.raw.inline" = { fg = "orange_text", bg = "orange_bg" }
 "markup.raw.block" = { fg = "orange_text", bg = "orange_bg" }
+
 "markup.bold" = { modifiers = ["bold"] }
 "markup.italic" = { modifiers = ["italic"] }
 "markup.strikethrough" = { modifiers = ["crossed_out"] }
