@@ -15,7 +15,7 @@
 "operator" = { fg = "base1" }
 "punctuation.bracket" = { modifiers = ["bold"] }
 "special" = { fg = "blue_text"}
-"string" = { fg = "green_text"}
+"string" = { fg = "green_text_sec"}
 "type" = { fg = "base1" }
 "variable" = { fg = "base1" }
 "variable.parameter" = { fg = "blue_text"}
