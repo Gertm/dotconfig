@@ -1,4 +1,4 @@
-theme = "vlakwit"
+theme = "papercolor-mine"
 
 [editor]
 line-number = "relative"
@@ -44,6 +44,12 @@ l = ":lsp-restart"
 "L" = "goto_line_end"
 "C-c" = "normal_mode"
 "C" = "toggle_comments"
+"F3" = ":config-reload"
+"F5" = ":theme papercolor-mine"
+"F6" = ":theme vlakwit"
+"F7" = ":theme darcula-solid"
+"F1" = ":buffer-previous"
+"F2" = ":buffer-next"
 
 [keys.select]
 "C-h" = "goto_line_start"
