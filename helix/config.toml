@@ -1,6 +1,7 @@
 theme = "kaolin-light"
 
 [editor]
+undercurl = true
 line-number = "relative"
 rulers = [120]
 bufferline = "multiple"
@@ -43,7 +44,7 @@ l = ":lsp-restart"
 "H" = "goto_line_start"
 "L" = "goto_line_end"
 "C-c" = "normal_mode"
-"C" = "toggle_comments"
+"A-c" = "toggle_comments"
 "F1" = ":buffer-previous"
 "F2" = ":buffer-next"
 "F3" = ":config-reload"
@@ -51,6 +52,8 @@ l = ":lsp-restart"
 "F6" = ":theme vlakwit"
 "F7" = ":theme darcula-solid"
 "F10" = ":buffer-close"
+"F12" = "goto_definition"
+
 [keys.select]
 "C-h" = "goto_line_start"
 "C-l" = "goto_line_end"
