@@ -52,11 +52,10 @@ l = ":lsp-restart"
 "F1" = ":buffer-previous"
 "F2" = ":buffer-next"
 "F3" = ":config-reload"
-"F5" = ":theme papercolor-mine"
-"F6" = ":theme vlakwit"
-"F7" = ":theme darcula-solid"
+"F5" = ":reload"
 "F10" = ":buffer-close"
 "F12" = "goto_definition"
+"S-F12" = "jump_backward"
 
 [keys.select]
 "C-h" = "goto_line_start"
