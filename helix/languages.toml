@@ -1,3 +1,15 @@
+[language-server.ada-lsp]
+command = "ada_language_server"
+config = {ada.scenarioVariables = {"LIBRARY_TYPE" = "static"}, ada.defaultCharset = "UTF-8", ada.useCompletionSnippets = "true"}
+
+
 [[language]]
 name="go"
 formatter = { command = "goimports" }
+
+[[language]]
+name="ada"
+scope="source.ada"
+roots=[]
+file-types=["ads", "adb"]
+language-servers = ["ada-lsp"]
