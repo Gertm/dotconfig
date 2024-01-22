@@ -56,6 +56,8 @@ l = ":lsp-restart"
 "F10" = ":buffer-close"
 "F12" = "goto_definition"
 "S-F12" = "jump_backward"
+"C-j" = ["move_visual_line_down","move_visual_line_down","move_visual_line_down","move_visual_line_down",]
+"C-k" = ["move_visual_line_up","move_visual_line_up","move_visual_line_up","move_visual_line_up",]
 
 [keys.select]
 "C-h" = "goto_line_start"
