@@ -5,6 +5,7 @@ undercurl = true
 line-number = "relative"
 rulers = [120]
 bufferline = "multiple"
+auto-pairs = false
 
 [editor.cursor-shape]
 insert = "bar"
