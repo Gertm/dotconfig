@@ -64,3 +64,9 @@ l = ":lsp-restart"
 "C-l" = "goto_line_end"
 "H" = "goto_line_start"
 "L" = "goto_line_end"
+
+[keys.normal."F6"]
+u = ":pipe jq -c '. | fromjson'"
+e = ":pipe jq -R -s ."
+m = ":pipe jq -c ."
+M = ":pipe jq ."
