@@ -3,4 +3,5 @@
 !/helix
 !/tmux
 !firstinstall.txt
+!/nvim
 helix/runtime/grammars
