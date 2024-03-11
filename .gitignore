@@ -5,3 +5,4 @@
 !firstinstall.txt
 !/nvim
 helix/runtime/grammars
+nvim/lazy-lock.json
