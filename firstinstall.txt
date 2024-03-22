@@ -19,6 +19,7 @@ if command -v dnf &> /dev/null
 then
   echo "Seems like we're on Fedora."
   sudo dnf install tmux btop ncdu git fd-find ripgrep fzf bat prettyping
+  sudo dnf install vim-enhanced
   sudo dnf -y copr enable varlad/helix
   sudo dnf -y install helix
   # for Factor:
