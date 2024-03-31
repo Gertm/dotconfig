@@ -1,4 +1,4 @@
-theme = "zed_onelight"
+theme = "catppuccin_latte"
 
 [editor]
 undercurl = true
