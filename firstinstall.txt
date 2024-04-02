@@ -20,7 +20,6 @@ then
   echo "Seems like we're on Fedora."
   sudo dnf install tmux btop ncdu git fd-find ripgrep fzf bat prettyping
   sudo dnf install vim-enhanced
-  sudo dnf -y copr enable varlad/helix
   sudo dnf -y install helix
   # for Factor:
   # sudo dnf install gtkglext-devel gtk2-devel gtk2-engines-devel 
