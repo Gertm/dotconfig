@@ -7,6 +7,9 @@ config = {ada.scenarioVariables = {"LIBRARY_TYPE" = "static"}, ada.defaultCharse
 name="go"
 formatter = { command = "goimports" }
 
+[language-server.gopls.config]
+"ui.diagnostic.staticcheck" = true
+
 [[language]]
 name="ada"
 scope="source.ada"
