@@ -27,10 +27,10 @@ character = "⁚"
 
 [keys.insert]
 "C-c" = "normal_mode"     # Maps Ctrl-C to enter normal mode
-up = "no_op"
-down = "no_op"
-left = "no_op"
-right = "no_op"
+# up = "no_op"
+# down = "no_op"
+# left = "no_op"
+# right = "no_op"
 
 # Minor mode on 'backspace' for toggling settings
 # [keys.normal."backspace"]
