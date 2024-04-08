@@ -4,6 +4,10 @@
 # Should you change your keyboard layout some time, delete
 # this file and re-run i3-config-wizard(1).
 #
+# for high dpi:
+# add in ~/.Xresources:
+# Xft.dpi: 120
+
 
 # i3 config file (v4)
 #
@@ -53,6 +57,9 @@ tiling_drag modifier titlebar
 # start a terminal
 bindsym $mod+Return exec i3-sensible-terminal
 
+# start a file manager
+bindsym $mod+e exec nautilus
+
 # kill focused window
 bindsym $mod+Shift+q kill
 
@@ -100,7 +107,7 @@ bindsym $mod+f fullscreen toggle
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
-bindsym $mod+e layout toggle split
+bindsym $mod+$mod1+e layout toggle split
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
@@ -153,6 +160,7 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 
 # lock screen
 bindsym Control+Mod1+l exec "i3lock -c 000000"
+exec "xautolock -detectsleep -time 10 -locker \"i3lock -c 000000\""
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
