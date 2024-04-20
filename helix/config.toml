@@ -39,7 +39,6 @@ character = "⁚"
 
 [keys.normal.space]
 l = ":lsp-restart"
-"space" = "keep_primary_selection"
 
 [keys.normal]
 "=" = ":format"
