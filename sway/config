@@ -256,6 +256,13 @@ bindsym $mod+space exec $menu
 # Open the application launcher (alternate version):
 bindsym $mod+d exec $menu
 
+
+#========#
+# assign #
+#========#
+
+assign [app_id="vivaldi"] = "1:1"
+
 #======#
 # Misc #
 #======#
