@@ -27,6 +27,7 @@ character = "⁚"
 
 [keys.insert]
 "C-c" = "normal_mode"     # Maps Ctrl-C to enter normal mode
+"esc" = "no_op"
 # up = "no_op"
 # down = "no_op"
 # left = "no_op"
@@ -36,6 +37,8 @@ character = "⁚"
 # [keys.normal."backspace"]
 # h = ":toggle-option lsp.display-inlay-hints"
 # i = ":toggle-option indent-guides.render"
+"F1" = ":buffer-previous"
+"F2" = ":buffer-next"
 
 [keys.normal.space]
 l = ":lsp-restart"
@@ -50,6 +53,8 @@ l = ":lsp-restart"
 "A-c" = "toggle_comments"
 "C-S-left" = ":buffer-previous"
 "C-S-right" = ":buffer-next"
+"F1" = ":buffer-previous"
+"F2" = ":buffer-next"
 "F3" = ":config-reload"
 "F5" = ":reload"
 "F10" = ":buffer-close"
