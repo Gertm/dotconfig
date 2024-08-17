@@ -27,7 +27,6 @@ character = "⁚"
 
 [keys.insert]
 "C-c" = "normal_mode"     # Maps Ctrl-C to enter normal mode
-"esc" = "no_op"
 # up = "no_op"
 # down = "no_op"
 # left = "no_op"
