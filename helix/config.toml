@@ -5,6 +5,7 @@ undercurl = true
 line-number = "relative"
 rulers = [120]
 bufferline = "multiple"
+end-of-line-diagnostics = "hint"
 
 [editor.cursor-shape]
 insert = "bar"
@@ -17,7 +18,7 @@ center = []
 right = ["selections", "primary-selection-length", "position", "position-percentage", "spacer", "diagnostics", "workspace-diagnostics"]
 
 [editor.lsp]
-display-inlay-hints = false
+display-inlay-hints = true
 display-messages = true
 snippets = true
 
@@ -27,7 +28,7 @@ character = "⁚"
 
 [editor.inline-diagnostics]
 cursor-line = "hint"
-other-lines = "error"
+# other-lines = "error"
 
 [keys.insert]
 "C-c" = "normal_mode"     # Maps Ctrl-C to enter normal mode
