@@ -1,0 +1,45 @@
+[user]
+	email = cel357@gmail.com
+	name = Gert Meulyzer
+[pull]
+	rebase = true
+[push]
+	default = simple
+	autoSetupRemote = true
+	followTags = true
+[alias]
+        lol = log --graph --decorate --pretty=oneline --abbrev-commit
+        lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+	squash-all = "!f(){ git reset $(git commit-tree HEAD^{tree} \"$@\");};f"
+[color]
+        branch = auto
+        diff = auto
+        interactive = auto
+        status = auto
+[core]
+	editor = hx
+[diff]
+	colorMoved = plain
+	mnemonicPrefix = true
+	renames = true
+	algorithm = histogram
+[fetch]
+	prune = true
+	pruneTags = true
+	all  = true
+[url "git@github.com:"]
+	insteadOf = https://github.com/
+[column]
+	ui = auto
+[branch]
+	sort = -committerdate
+[tag]
+	sort = version:refname
+[help]
+	autocorrect = prompt
+[commit]
+	verbose = true
+[rebase]
+	autoSquash = true
+	autoStash = true
+	updateRefs = true
