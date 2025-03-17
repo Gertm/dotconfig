@@ -46,6 +46,7 @@ cursor-line = "hint"
 
 [keys.normal.space]
 l = ":lsp-restart"
+o = "file_picker_in_current_buffer_directory"
 
 [keys.normal]
 "=" = ":format"
@@ -68,6 +69,7 @@ l = ":lsp-restart"
 "C-k" = ["move_visual_line_up","move_visual_line_up","move_visual_line_up","move_visual_line_up"]
 "C-e" = ["search_selection", "extend_search_next"]
 "C-g" = [":new", ":insert-output lazygit", ":buffer-close!", ":redraw"]
+"ret" = "goto_word"
 
 [keys.select]
 "C-h" = "goto_line_start"
