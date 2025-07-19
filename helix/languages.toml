@@ -1,10 +1,3 @@
-[[language]]
-name="go"
-formatter = { command = "goimports" }
-
-[language-server.gopls.config]
-"ui.diagnostic.staticcheck" = true
-
 [language-server.lua-language-server]
 command = "lua-language-server"
 
@@ -19,5 +12,14 @@ await = true
 [language-server.lua-language-server.config.Lua.runtime]
 version = "luajit"
 
-[language-server.lua-language-server.config.Lua.workspace]
-library = ["/opt/homebrew/Cellar/lua-language-server/3.14.0/libexec/meta/3rd/love2d/library"]
+[[language]]
+ name = "go"
+ auto-format = true
+ language-servers = ["gopls", "golangci-lint2-langserver"]
+ formatter = { command = "goimports" }
+
+[language-server.golangci-lint2-langserver]
+command = "golangci-lint-langserver"
+
+[language-server.golangci-lint2-langserver.config]
+command = ["golangci-lint", "run", "--out-format", "json", "--show-stats=false", "--issues-exit-code=1"]
