@@ -1,8 +1,3 @@
-[language-server.ada-lsp]
-command = "ada_language_server"
-config = {ada.scenarioVariables = {"LIBRARY_TYPE" = "static"}, ada.defaultCharset = "UTF-8", ada.useCompletionSnippets = "true"}
-
-
 [[language]]
 name="go"
 formatter = { command = "goimports" }
@@ -10,9 +5,19 @@ formatter = { command = "goimports" }
 [language-server.gopls.config]
 "ui.diagnostic.staticcheck" = true
 
-[[language]]
-name="ada"
-scope="source.ada"
-roots=[]
-file-types=["ads", "adb"]
-language-servers = ["ada-lsp"]
+[language-server.lua-language-server]
+command = "lua-language-server"
+
+[language-server.lua-language-server.config.Lua.hint]
+enable = true
+arrayIndex = "Enable"
+setType = true
+paramName = "All"
+paramType = true
+await = true
+
+[language-server.lua-language-server.config.Lua.runtime]
+version = "luajit"
+
+[language-server.lua-language-server.config.Lua.workspace]
+library = ["/opt/homebrew/Cellar/lua-language-server/3.14.0/libexec/meta/3rd/love2d/library"]
