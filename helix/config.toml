@@ -18,7 +18,7 @@ center = []
 right = ["selections", "primary-selection-length", "position", "position-percentage", "spacer", "diagnostics", "workspace-diagnostics"]
 
 [editor.lsp]
-display-inlay-hints = true
+display-inlay-hints = false
 display-messages = true
 snippets = true
 
