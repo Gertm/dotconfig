@@ -8,3 +8,4 @@ helix/runtime/grammars
 !sway/
 !dot_gitconfig
 !/kitty
+!/ghostty
