@@ -3,3 +3,7 @@ font-size = 18
 theme = catppuccin-latte
 mouse-hide-while-typing = true
 background-opacity = 0.95
+keybind = global:super+escape=toggle_quick_terminal
+quick-terminal-animation-duration = 0
+# Host *
+#    SetEnv TERM=xterm-256color
