@@ -47,6 +47,7 @@ cursor-line = "hint"
 [keys.normal.space]
 l = ":lsp-restart"
 o = "file_picker_in_current_buffer_directory"
+B = ":echo %sh{git blame -L %{cursor_line},+1 %{buffer_name}}"
 
 [keys.normal]
 "=" = ":format"
