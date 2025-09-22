@@ -72,6 +72,13 @@ B = ":echo %sh{git blame -L %{cursor_line},+1 %{buffer_name}}"
 "C-g" = [":new", ":insert-output lazygit", ":buffer-close!", ":redraw"]
 "ret" = "goto_word"
 
+[keys.normal.m]
+"\"" = "@f\";vmim"
+"'"  = "@f';vmim"
+"[" = "@f[;vmim"
+"(" = "@f(;vmim"
+"{" = "@f{;vmim"
+
 [keys.select]
 "C-h" = "goto_line_start"
 "C-l" = "goto_line_end"
