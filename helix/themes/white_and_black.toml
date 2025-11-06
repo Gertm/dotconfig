@@ -18,7 +18,8 @@
 "markup.quote"                    = { modifiers = ["italic"] }
 "markup.strikethrough"            = { modifiers = ["crossed_out"] }
 
-"type"                            = { modifiers = ["italic"] }
+"type"                            = { underline = { style = "dotted"}}
+# "type"                            = { modifiers = ["italic"] }
 "type.enum.variant"               = { modifiers = ["italic"] }
 
 "ui.background"                   = { bg = "background" }
@@ -48,13 +49,14 @@
 "ui.virtual.inlay-hint.parameter" = { modifiers = ["italic", "dim"] }
 "ui.virtual.inlay-hint.type"      = { modifiers = ["italic", "dim"] }
 "ui.virtual.jump-label"           = { modifiers = ["bold"] }
-
+"string"                          = { modifiers = ["italic"] }
 
 "variable.builtin"                = { modifiers = ["bold"] }
 "variable.parameter"              = { modifiers = ["bold"] }
 
 [palette]
 foreground = "#000000"
-background = "#ffffff"
+background = "#eeeeee"
 primary    = "#c9c9c9"
 secondary  = "#e3e1e1"
+  

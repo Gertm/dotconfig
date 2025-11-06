@@ -1,4 +1,5 @@
-theme = "catppuccin_latte"
+theme = "white_and_black"
+#theme = "catppuccin_latte"
 
 [editor]
 undercurl = true
