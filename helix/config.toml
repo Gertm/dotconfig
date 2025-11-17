@@ -1,5 +1,4 @@
-theme = "white_and_black"
-#theme = "catppuccin_latte"
+theme = "catppuccin_latte"
 
 [editor]
 undercurl = true
@@ -44,6 +43,8 @@ cursor-line = "hint"
 # i = ":toggle-option indent-guides.render"
 "F1" = ":buffer-previous"
 "F2" = ":buffer-next"
+"S-tab" = "unindent"
+
 
 [keys.normal.space]
 l = ":lsp-restart"
