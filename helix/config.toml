@@ -6,6 +6,8 @@ line-number = "relative"
 rulers = [120]
 bufferline = "multiple"
 end-of-line-diagnostics = "hint"
+color-modes = true
+
 
 [editor.cursor-shape]
 insert = "block"
@@ -16,6 +18,9 @@ select = "underline"
 left = ["mode", "spinner", "version-control", "file-name", "file-type", "total-line-numbers", "file-encoding"]
 center = []
 right = ["selections", "primary-selection-length", "position", "position-percentage", "spacer", "diagnostics", "workspace-diagnostics"]
+mode.insert = "[[[[ INSERT ]]]]"
+mode.normal = ""
+mode.select = "SELECT"
 
 [editor.lsp]
 display-inlay-hints = false
@@ -74,7 +79,6 @@ B = ":echo %sh{git blame -L %{cursor_line},+1 %{buffer_name}}"
 "ret" = "goto_word"
 "A-x" = "extend_line_up"
 
-
 [keys.normal.m]
 "\"" = "@f\";vmim"
 "'"  = "@f';vmim"
@@ -93,3 +97,4 @@ u = ":pipe jq -c '. | fromjson'"
 e = ":pipe jq -R -s ."
 m = ":pipe jq -c ."
 f = ":pipe jq ."
+
