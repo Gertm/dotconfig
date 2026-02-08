@@ -1,9 +1,9 @@
-# font-family = "Comic Mono"
-# font-family-bold = "Comic Mono Bold"
-font-family = "Monaspace Neon"
+# brew install --cask font-maple-mono-nf
+font-family = "Maple Mono NF"
+# font-family = "Monaspace Neon"
 font-style = "Regular"
 font-size = 18
-font-feature = -calt,+liga,+dlig
+font-feature = +cv01,+cv04,+calt,+dlig
 theme = Catppuccin Latte
 mouse-hide-while-typing = true
 background-opacity = 0.95
