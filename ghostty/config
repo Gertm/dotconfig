@@ -1,7 +1,7 @@
-# font-family = "Comic Mono"
-# font-family-bold = "Comic Mono Bold"
-font-family = "Monaspace Neon"
-font-style = "Regular"
+# font-family = "GoMono Nerd Font"
+# font-family = "Andale Mono"
+font-family = "BlexMono Nerd Font Mono"
+font-style = "Text"
 font-size = 18
 font-feature = -calt,+liga,+dlig
 theme = Catppuccin Latte
