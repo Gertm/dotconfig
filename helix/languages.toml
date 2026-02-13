@@ -1,6 +1,14 @@
 [language-server.lua-language-server]
 command = "lua-language-server"
 
+[language-server.lua-language-server.config]
+Lua.workspace.library = [
+ "/Users/gert/.luarocks/share/lua/5.4/",
+ "/opt/homebrew/share/lua/5.4/",
+ "/opt/homebrew/lib/luarocks/rocks-5.4"
+]
+
+
 [language-server.lua-language-server.config.Lua.hint]
 enable = true
 arrayIndex = "Enable"
@@ -9,8 +17,8 @@ paramName = "All"
 paramType = true
 await = true
 
-[language-server.lua-language-server.config.Lua.runtime]
-version = "luajit"
+# [language-server.lua-language-server.config.Lua.runtime]
+# version = "luajit"
 
 [[language]]
  name = "go"
