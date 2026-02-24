@@ -1,13 +1,17 @@
 [language-server.lua-language-server]
 command = "lua-language-server"
+args = ["--format"]
 
 [language-server.lua-language-server.config]
 Lua.workspace.library = [
  "/Users/gert/.luarocks/share/lua/5.4/",
+ "/Users/gertm/.luarocks/share/lua/5.4/",
  "/opt/homebrew/share/lua/5.4/",
- "/opt/homebrew/lib/luarocks/rocks-5.4"
+ "/opt/homebrew/lib/luarocks/rocks-5.4",
+ "/Users/gertm/src/love-api/love_api.lua",
+ "/Users/gert/src/love-api/love_api.lua"
 ]
-
+# git clone git@github.com:love2d-community/love-api.git
 
 [language-server.lua-language-server.config.Lua.hint]
 enable = true
@@ -16,9 +20,6 @@ setType = true
 paramName = "All"
 paramType = true
 await = true
-
-# [language-server.lua-language-server.config.Lua.runtime]
-# version = "luajit"
 
 [[language]]
  name = "go"
