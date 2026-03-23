@@ -49,7 +49,7 @@ cursor-line = "hint"
 "C-[" = ":buffer-previous"
 "C-]" = ":buffer-next"
 "S-tab" = "unindent"
-
+"C-s" = ":write"
 
 [keys.normal.space]
 l = ":lsp-restart"
