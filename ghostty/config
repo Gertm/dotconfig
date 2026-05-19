@@ -1,5 +1,9 @@
 # font-family = "BlexMono Nerd Font Mono"
-font-family = "CommitMono Nerd Font Mono"
+#font-family = "CommitMono Nerd Font Mono"
+#font-family = "DepartureMono Nerd Font"
+font-family = "Monaspace Xenon"
+#font-family = "Px437 Philips :YES G"
+
 font-style = "Regular"
 font-size = 18
 font-feature = -calt,+liga,+dlig
