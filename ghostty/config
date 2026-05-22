@@ -1,13 +1,13 @@
 # font-family = "BlexMono Nerd Font Mono"
 #font-family = "CommitMono Nerd Font Mono"
 #font-family = "DepartureMono Nerd Font"
-font-family = "Monaspace Xenon"
+font-family = "MonaspiceXe Nerd Font"
 #font-family = "Px437 Philips :YES G"
 
 font-style = "Regular"
-font-size = 18
+font-size = 15
 font-feature = -calt,+liga,+dlig
-theme = Catppuccin Latte
+theme = /home/gert/.config/ghostty/themes/catppuccin-latte.conf
 mouse-hide-while-typing = true
 background-opacity = 0.95
 keybind = global:super+escape=toggle_quick_terminal
