@@ -35,8 +35,8 @@
 "ui.cursor.primary.select"        = { fg = "background", bg = "foreground" }
 "ui.cursorline.primary"           = { bg = "primary" }
 "ui.linenr"                       = { fg = "foreground" }
-"ui.menu"                         = { fg = "background", bg = "primary" }
-"ui.menu.selected"                = { fg = "foreground", bg = "fullwhite"}
+"ui.menu"                         = { fg = "background", bg = "foreground" }
+"ui.menu.selected"                = { fg = "foreground", bg = "background"}
 "ui.popup"                        = { fg = "foreground", bg = "primary" }
 "ui.selection"                    = { bg = "secondary", underline = { style = "curl" } }
 "ui.selection.primary"            = { bg = "primary", underline = { style = "curl" }}
