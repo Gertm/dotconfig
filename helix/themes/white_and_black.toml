@@ -18,8 +18,8 @@
 "markup.quote"                    = { modifiers = ["italic"] }
 "markup.strikethrough"            = { modifiers = ["crossed_out"] }
 
-"type"                            = { underline = { style = "dotted"}}
-# "type"                            = { modifiers = ["italic"] }
+# "type"                            = { underline = { style = "dotted"}}
+"type"                            = { modifiers = ["italic"] }
 "type.enum.variant"               = { modifiers = ["italic"] }
 
 "ui.background"                   = { bg = "background" }
