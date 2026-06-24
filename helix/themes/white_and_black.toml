@@ -38,8 +38,8 @@
 "ui.menu"                         = { fg = "background", bg = "foreground" }
 "ui.menu.selected"                = { fg = "foreground", bg = "background"}
 "ui.popup"                        = { fg = "foreground", bg = "primary" }
-"ui.selection"                    = { bg = "secondary", underline = { style = "curl" } }
-"ui.selection.primary"            = { bg = "primary", underline = { style = "curl" }}
+"ui.selection"                    = { bg = "secondary" }
+"ui.selection.primary"            = { bg = "primary" }
 "ui.statusline"                   = { fg = "background", bg = "foreground" }
 "ui.statusline.insert"            = {  modifiers = ["bold"] }
 "ui.statusline.normal"            = {  modifiers = ["bold"] }
