@@ -1,12 +1,12 @@
 #font-family = "BlexMono Nerd Font Mono"
 #font-family = "CommitMono Nerd Font Mono"
 #font-family = "DepartureMono Nerd Font"
-#font-family = "Monaspace Xenon"
-font-family = "Monaspace Neon"
+font-family = "Monaspace Argon NF"
+#font-family = "Monaspace Neon NF"
 #font-family = "Px437 Philips :YES G"
 
 font-style = "Regular"
-font-size = 19
+font-size = 15
 font-feature = -calt,+liga,+dlig
 theme = Catppuccin Latte
 mouse-hide-while-typing = true
