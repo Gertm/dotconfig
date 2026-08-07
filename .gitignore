@@ -10,3 +10,4 @@ helix/runtime/grammars
 !/kitty
 !/ghostty
 /ghostty/config.ghostty
+!/niri
